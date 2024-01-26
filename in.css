@@ -115,7 +115,7 @@ i {
 /* hero */
 .hero {
   height: 620px;
-  background: url(/Growth/images/hero-bg.png) no-repeat;
+  background: url(/images/hero-bg.png) no-repeat;
   background-position: bottom 50px center;
   background-size: contain;
 }
