@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hbMenu = document.querySelector(".hb-menu");
 
   hbIcon.addEventListener("click", function () {
-    hbMenu.classList.toggle("hb-inactive");
+    hbMenu.classList.toggle("hb-menu-active");
+    hbIcon.classList.toggle("hb-icon-active");
   });
 });

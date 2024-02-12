@@ -129,6 +129,10 @@ i {
   display: inline-block;
   font-weight: 500;
   margin-top: 20px;
+  transition: scale 100ms linear;
+}
+.hero a:hover {
+  scale: 1.025;
 }
 .m-img {
   display: none;
@@ -145,8 +149,11 @@ i {
 .preview a {
   display: inline-block;
   margin: 30px 0 40px;
+  transition: scale 100ms linear;
 }
-
+.preview a:hover {
+  scale: 1.025;
+}
 /*testimonial*/
 
 .testimonials {
@@ -182,6 +189,13 @@ i {
 .pricing-flex a {
   display: inline-block;
   width: 100%;
+  transition: scale 100ms linear;
+}
+.pricing-flex a:nth-child(even) {
+  margin-top: 20px;
+}
+.pricing-flex a:hover {
+  scale: 1.025;
 }
 .pricing-flex {
   display: flex;
@@ -228,10 +242,14 @@ i {
   padding: 10px 20px;
   border-radius: 10px;
   font-weight: 500;
+  transition: scale 100ms linear;
 }
 .faq-nav a.selected {
   background: var(--primaryColor);
   color: white;
+}
+.faq-nav a:hover {
+  scale: 1.025;
 }
 .faq-group {
   margin: 20px 10px 10px;
@@ -283,6 +301,10 @@ i {
 }
 .form-section button {
   cursor: pointer;
+  transition: scale 100ms linear;
+}
+.form-section button:hover {
+  scale: 1.025;
 }
 .form-section button,
 .form-section input {
@@ -315,7 +337,7 @@ i {
 .hb-menu {
   z-index: 800;
   position: fixed;
-  right: 0px;
+  right: -300px;
   padding-top: 100px;
   top: 0px;
   width: 250px;
@@ -332,8 +354,11 @@ i {
 .hb-menu a:hover {
   color: var(--primaryColor);
 }
-.hb-inactive {
-  right: -300px;
+.hb-menu-active {
+  right: 0px;
+}
+.hb-icon-active {
+  position: fixed;
 }
 
 /* Responsivenes */
@@ -341,6 +366,11 @@ i {
 @media (max-width: 1200px) {
   .container {
     width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .hb-menu {
+    right: -300px;
   }
 }
 @media (max-width: 768px) {
