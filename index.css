@@ -440,6 +440,9 @@ i {
     flex-direction: column;
     align-items: center;
   }
+  .pricing-flex a:nth-child(odd) {
+    margin-top: 20px;
+  }
   .pannel {
     max-width: 100%;
   }
